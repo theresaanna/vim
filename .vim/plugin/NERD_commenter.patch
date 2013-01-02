@@ -1,0 +1,19 @@
+diff --git a/plugin/NERD_commenter.vim b/plugin/NERD_commenter.vim
+index fa6c3c8..e6660ce 100644
+--- a/plugin/NERD_commenter.vim
++++ b/plugin/NERD_commenter.vim
+@@ -516,12 +516,12 @@ function s:AppendCommentToLine()
+
+     "stick the delimiters down at the end of the line. We have to format the
+     "comment with spaces as appropriate
+-    execute ":normal! " . insOrApp . (isLineEmpty ? '' : ' ') . left . right
++    execute ":normal! " . insOrApp . (isLineEmpty ? '' : ' ') . left . right . " "
+
+     " if there is a right delimiter then we gotta move the cursor left
+     " by the len of the right delimiter so we insert between the delimiters
+     if lenRight > 0
+-        let leftMoveAmount = lenRight - 1
++        let leftMoveAmount = lenRight
+         execute ":normal! " . leftMoveAmount . "h"
+     endif
+     startinsert
