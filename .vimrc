@@ -1,9 +1,9 @@
 set number
-syntax on
+syntax enable
+set background=dark
 set expandtab
-set t_Co=256
-colorscheme Tomorrow-Night
-set tabstop=4 softtabstop=4 shiftwidth=4
+colorscheme solarized
+set tabstop=2 softtabstop=2 shiftwidth=2
 set noswapfile
 let NERDTreeDirArrows=0
 let NERDTreeShowHidden=1
