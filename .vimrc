@@ -3,7 +3,7 @@ syntax enable
 set background=dark
 set expandtab
 colorscheme solarized
-set tabstop=2 softtabstop=2 shiftwidth=2
+set tabstop=4 softtabstop=4 shiftwidth=4
 set noswapfile
 let NERDTreeDirArrows=0
 let NERDTreeShowHidden=1
